@@ -16,8 +16,8 @@ function addCell(a,b,c,d) {
     let row = document.getElementById("output");
     for (let i = 0; i < 4; i++) {
         let colVal = document.createElement("div");
-        cell.innerText = color;
-
+        colVal.innerText = a;
+        row.appendChild(colVal).className = "container-item";
     }
     /*
     function addCell(color) {
