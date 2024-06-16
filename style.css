@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+.form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5%;
+    align-items: center;
+    align-content: center;
+}
+.item-width{
+    flex: auto;
+    height: 25px;
+    padding: 8px;
+}
+button{
+    padding: 8px;
+}
+h2{
+    text-align: center;
+}
+.flex-card-book{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    gap: 10%;
+    margin: auto auto;
+}
+.heading p{
+    border-right: 1px solid grey;
+    flex-shrink: 0;
+    padding: 8px;
+} 
+
+#output{
+    display: flex;
+    gap: 10%;
+    margin: auto auto;
+}
+#output div{
+    /* border-right: 1px solid grey; */
+    flex-shrink: 0;
+    padding-left: 8px;
+    padding-right: 8px;  
+}
