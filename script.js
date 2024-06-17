@@ -13,20 +13,18 @@ function Book(title, author, noOfPages, hasTheBookBeenRead) {
     this.hasTheBookBeenRead = hasTheBookBeenRead;
 }
 function addCell(a,b,c,d) {
-    let row = document.getElementById("output");
-    for (let i = 0; i < 4; i++) {
-        let colVal = document.createElement("div");
-        colVal.innerText = a;
-        row.appendChild(colVal).className = "container-item";
-    }
-    /*
-    function addCell(color) {
-  let container = document.getElementById(color + "-container");
-
-  let cell = document.createElement("div");
-  cell.innerText = color;
-  container.appendChild(cell).className = "container-item";
-}*/
+    let col1 = document.createElement("div");
+    let col2 = document.createElement("div");
+    let col3 = document.createElement("div");
+    let col4 = document.createElement("div");
+    col1.innerText = a;
+    col2.innerText = b;
+    col3.innerText = c;
+    col4.innerText = d;
+    document.getElementById("output").appendChild(col1);
+    document.getElementById("output").appendChild(col2);
+    document.getElementById("output").appendChild(col3);
+    document.getElementById("output").appendChild(col4);
 }
 function displayBooks() {
     document.getElementById("output").innerHTML = "";
@@ -35,12 +33,7 @@ function displayBooks() {
         let b = buk.author;
         let c = buk.noOfPages;
         let d = buk.hasTheBookBeenRead;
-        //     // Create element:
-        //     const para = document.createElement("p");
-        //     para.innerHTML = a + " "+ b +" "+" "+ c +" "+ d;
-        //     // Append to output:
-        //     document.getElementById("output").appendChild(para);
-
+        addCell(a,b,c,d);
     });
 }
 function addBookToLibrary(book) {

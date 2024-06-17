@@ -22,26 +22,20 @@ h2{
 .flex-card-book{
     display: flex;
     flex-direction: column;
+
 }
 .heading{
-    display: flex;
-    gap: 10%;
-    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 .heading p{
-    border-right: 1px solid grey;
-    flex-shrink: 0;
-    padding: 8px;
 } 
 
 #output{
-    display: flex;
-    gap: 10%;
-    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 #output div{
-    /* border-right: 1px solid grey; */
-    flex-shrink: 0;
-    padding-left: 8px;
-    padding-right: 8px;  
 }
