@@ -27,15 +27,18 @@ h2{
 .heading{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 .heading p{
+    font-weight: bold;
 } 
 
 #output{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 #output div{
+
+}
+.hide-row {
+    visibility: hidden;
 }
